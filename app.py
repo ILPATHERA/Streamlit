@@ -9,7 +9,7 @@ st.header("Kalorienrechner")
 # Formular
 st.subheader("Damit wir Ihren Grundbedarf berechnen können, benötigen wir einige Angaben von Ihnen.")
 username = st.text_input("Geben Sie hier Ihren Namen ein")
-input0 = st.selectbox("Geschlecht", ["Männlich", "Weiblich"])
+input0 = st.radio("Geschlecht", ["Männlich", "Weiblich"])
 input1 = st.slider("Alter", min_value=0, max_value=120, step=1)
 input2 = st.slider("Gewicht", min_value=0, max_value=150, step=1)
 input3 = st.slider("Grösse", min_value=0, max_value=220, step=1)
